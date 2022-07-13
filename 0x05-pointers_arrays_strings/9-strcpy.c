@@ -2,9 +2,9 @@
 
 /**
  * _strcpy - copies thr string pointed to bh src
- * @dest: a pointer to a char that will be changed
+ * @dest: a pointer to a char that eill be changed
  * @src: a pointer to a char that will be changed
- * Return; dest
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
@@ -18,5 +18,6 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
+
 	return (dest);
 }
