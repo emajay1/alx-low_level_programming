@@ -15,15 +15,15 @@ char *rot13(char *s)
 
 	while (s[i] != '\0')
 	{
-		do{
+		do {
 			if (s[i] == string_alpha[j])
 			{
 				s[i] = string_rot13[j];
 				break;
 			}
 			j++;
-		}
-		while (string_alpha[j] != '\0');
+		} while
+		(string_alpha[j] != '\0');
 	}
 	j = 0;
 	i++;
