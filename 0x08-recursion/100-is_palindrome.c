@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * palind2 - obtains length of 
+ * palind2 - obtains length of
  * @a: string
  * @l: integer to count length
  * Return: On success 1.
