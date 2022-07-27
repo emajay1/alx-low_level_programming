@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - return void
- * Return: void
- */
 int main(void)
 {
 	int n;
@@ -11,9 +7,7 @@ int main(void)
 	int *p;
 
 	a[2] = 1024;
-
 	p = &n;
-
 	/*
 	 * write your line of code here...
 	 * Remember:
@@ -30,5 +24,4 @@ int main(void)
 	printf("a[2] = %d\n", a[2]);
 
 	return (0);
-
 }

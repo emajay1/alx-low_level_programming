@@ -7,11 +7,13 @@
  */
 
 char *rot13(char *s)
-{
-int i = 0, j = 0;
 
-char string_rot13[] = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
-char string_alpha[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+{
+	int i = 0, j = 0;
+
+	char string_rot13[] = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
+
+	char string_alpha[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
 	while (s[i] != '\0')
 	{
@@ -22,11 +24,11 @@ char string_alpha[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 				break;
 			}
 			j++;
-		} while
-		(string_alpha[j] != '\0');
+		} while (string_alpha[j] != '\0');
 	}
 	j = 0;
 	i++;
 
 	return (s);
+
 }
