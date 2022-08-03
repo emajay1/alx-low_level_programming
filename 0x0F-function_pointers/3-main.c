@@ -3,24 +3,32 @@
 #include "3-calc.h"
 
 /**
- * main - operations between intergers
- * @argv: argument value array
- * @argc: argument counter
- * Return: result of the operation
+ * main - performs simple operations
+ * @argc: number of arguments passed
+ * @argv: array of pointers to arguments
+ *
+ * Return: always 0
  */
 
 int main(int argc, char *argv[])
 {
-int num1, num2, op;
+	int a, b, c;
+	int (*f)(int, int);
 
-if (argc != 4)
-{
-printf("Error\n");
-exit(98);
-}
-num1 = atoi(argv[1]);
-num2 = atoi(argv[3]);
-op = (*get_op_func(argv[2]))(num1, num2);
-printf("%d\n", op);
-return (0);
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	f = get_op_func(argv[2]);
+	if (f == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	c = f(a, b);
+	printf("%d\n", c);
+	return (0);
 }
