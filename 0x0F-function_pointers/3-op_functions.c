@@ -9,9 +9,9 @@
  * Return: sum of intergers
  */
 int op_add(int a, int b)
-{
-return (a + b);
-}
+	{
+	return (a + b);
+	}
 /**
  * op_sub - subtracting  two intergers
  * @a: first interger
@@ -19,9 +19,9 @@ return (a + b);
  * Return: product of operation
  */
 int op_sub(int a, int b)
-{
-return (a - b);
-
+	{
+	return (a - b);
+	}
 /**
  * op_div -division  two intergers
  * @a: first interger
@@ -55,10 +55,11 @@ return (a * b);
  */
 int op_mod(int a, int b)
 {
-if (b == 0)
-{
-printf("Error\n");
-exit(100);
-}
+	if (b == 0)
+	{
+	printf("Error\n");
+	exit(100);
+	}
+
 return (a % b);
 }
