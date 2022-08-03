@@ -26,7 +26,7 @@ printf("\n");
 /**
  * main - print the opcodes og its own main function
  * @argc: number of arguments passed to the function
- * @rgv: array of pointers to arguments
+ * @argv: array of pointers to arguments
  *
  * Return: 0 if successful
  */
